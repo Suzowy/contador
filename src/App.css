@@ -1,0 +1,126 @@
+body {
+  font-family: "Ysabeau SC", serif;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  font-family: "Ysabeau SC", serif;
+}
+
+.card-container {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  width: 95%;
+  max-width: 400px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: lighter;
+  padding: 20px;
+}
+
+.counter {
+  font-size: 4rem;
+  margin: 20px 0;
+}
+
+/* Botones*/
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  flex: 1;
+  padding: 15px;
+  font-size: 30px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn img {
+  width: 30px;
+  height: 30px;
+}
+
+.btn-increment {
+  border-color: #28a745;
+}
+
+.btn-decrement {
+  border-color: #ffc107;
+}
+
+.btn-reset {
+  border-color: #dc3545;
+}
+
+.btn:hover {
+  background-color: transparent;
+}
+
+.btn-increment:hover {
+  background-color: #28a745;
+}
+
+.btn-decrement:hover {
+  background-color: #ffc107;
+}
+
+.btn-reset:hover {
+  background-color: #dc3545;
+}
+
+/* mensajes */
+.error-message {
+  font-size: 1rem;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  font-family: "Ysabeau SC", serif;
+}
+
+.message {
+  color: green;
+  font-size: 1rem;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  font-family: "Ysabeau SC", serif;
+}
+
+.black-message {
+  color: black;
+}
+
+.red-message {
+  color: red;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .button-group {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 40%;
+  }
+}
